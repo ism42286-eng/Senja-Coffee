@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Senja Coffe</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <h2 class="nav-title">Senja Caffee</h2>
+        <div class="nav-container">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </div>
+        <button class="btn-call" onclick="hubungiSaya()">Hubungi Kami</button>
+      </nav>
+
+      <section id="hero">
+        <div class="intro">
+          <h1 class="intro-title">Nikmati Senja, Dalam Setiap Cangkir</h1>
+          <p class="intro-description">
+            Kopi berkualitas, suasana hangat, dan cerita yang tak terlupakan
+          </p>
+          <div class="cta">
+            <button id="goToMenu" class="btn-cta">Lihat Menu</button>
+            <button class="btn-call" onclick="hubungiSaya()">Hubungi Kami</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="about">
+      <div class="about-container">
+        <img class="about-img" src="assets/image/senja.png" />
+        <div class="about-content">
+         <p class="about-intro">TENTANG KAMI</p>
+         <h3 class="about-title">Lebih Dari Sekedar Kopi</h3>
+         <p class="about-description">Senja Coffee berdiri sejak 2021 dengan tujuan sederhana: menyajikan kopi berkualitas dalam suasana yang nyaman seperti di rumah sendiri.</p>
+         <p class="about-description">Kami percaya setiap cangkir kopi memiliki cerita, dan kami hadir untuk menjadi bagian dari cerita harimu.</p>
+         <div class="about-card">
+            <div class="about-card-item">
+              <p class="about-card-title">Biji Kopi Pilihan</p>
+              <p class="about-card-description">Kami memilih biji kopi terbaik dari petani lokal</p>
+            </div>
+            <div class="about-card-item">
+              <p class="about-card-title">Racikan Istimewa</p>
+              <p class="about-card-description">Diracik oleh barista berpengalaman</p>
+            </div>
+            <div class="about-card-item">
+              <p class="about-card-title">Suasana Nyaman</p>
+              <p class="about-card-description">Tempat yang cozy untuk bekerja atau bersantai</p>
+            </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="menu">
+      <p class="menu-intro">MENU FAVORIT</p>
+      <h3 class="menu-title">Pilihan Kopi Terbaik Kami</h3>
+      <div class="menu-card">
+        
+        <div class="menu-card-item">
+          <img class="menu-img" src="assets/image/senja.png" alt="menu1" width="150"/>
+          <div class="menu-card-text">
+            <h5 class="menu-card-title">Cappucino</h5>
+            <p class="menu-card-description">Perpaduan espresso, susu, dan busa yang pas.</p>
+            <h5 class="menu-price">Rp 25.000</h5>
+          </div>
+        </div>
+        
+        <div class="menu-card-item">
+          <img class="menu-img" src="assets/image/senja.png" alt="menu1" width="150"/>
+          <div class="menu-card-text">
+            <h5 class="menu-card-title">Latte</h5>
+            <p class="menu-card-description">Kelembutan susu dengan sentuhan espresso.</p>
+            <h5 class="menu-price">Rp 28.000</h5>
+          </div>
+        </div>
+        
+        <div class="menu-card-item">
+          <img class="menu-img" src="assets/image/senja.png" alt="menu1" width="150"/>
+          <div class="menu-card-text">
+            <h5 class="menu-card-title">Americano</h5>
+            <p class="menu-card-description">Espresso dengan air panas. Rasa kuat dan bold.</p>
+            <h5 class="menu-price">Rp 20.000</h5>
+          </div>
+        </div>
+        
+        <div class="menu-card-item">
+          <img class="menu-img" src="assets/image/senja.png" alt="menu1" width="150"/>
+          <div class="menu-card-text">
+            <h5 class="menu-card-title">Caramel Macchiato</h5>
+            <p class="menu-card-description">Manisnya karamel dengan paduan espresso.</p>
+            <h5 class="menu-price">Rp 30.000</h5>
+          </div>
+        </div>
+        
+        <div class="menu-card-item">
+          <img class="menu-img" src="assets/image/senja.png" alt="menu1" width="100%"/>
+          <div class="menu-card-text">
+            <h5 class="menu-card-title">Mocha</h5>
+            <p class="menu-card-description">Coklat dan kopi dalam harmoni yang sempurna.</p>
+            <h5 class="menu-price">Rp 30.000</h5>
+          </div>
+        </div>
+        
+        <div class="menu-card-item">
+          <img class="menu-img" src="assets/image/senja.png" alt="menu1" width="150"/>
+          <div class="menu-card-text">
+            <h5 class="menu-card-title">Es Kopi Susu</h5>
+            <p class="menu-card-description">Segarnya kopi susu untuk harimu.</p>
+            <h5 class="menu-price">Rp 24.000</h5>
+          </div>
+        </div>
+      </div>
+      <div class="menu-btn">
+        <button class="btn-cta" onclick="lihatSemuaMenu()">Lihat Semua Menu</button>
+      </div>
+    </section>
+    
+    <section id="kontak">
+      <div class="kontak-text">
+        <h5 class="kontak-intro">HUBUNGI KAMI</h5>
+        <h3 class="kontak-title">Kami Siap Mendengar Cerita Anda</h3>
+        <p class="kontak-description">Punya pertanyaan, saran ,atau ingin bekerja sama ?</p>
+        <p class="kontak-description">Kirim pesan untuk kami melalu form berikut.</p>
+      </div>
+      <div class="kontak-form">
+        <div class="input-data">
+          <input id="input-nama" class="input-form-data" placeholder="Nama Lengkap" type="text"/>
+          <input id="input-email" class="input-form-data" placeholder="Email" type="email"/>
+        </div>
+        <input id="input-pesan" class="input-form-massages" placeholder="Pesan Anda" type="text" />
+        <button id="btn-send-pesan" class="btn-cta">kirim pesan</button>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="footer-title">
+        <h3 class="footer-title-title mb-2 footer-title-size" >SENJA COFFEE</h3>
+        <p class="footer-description-size">Nikmati senja terbaik bersama kopi pilihan</p>
+      </div>
+      <div class="footer-alamat">
+        <h5 class="footer-title-size mb-2">ALAMAT</h5>
+        <p class="footer-description-size">Jl. Senja indah No.7</p>
+        <p class="footer-description-size">Makassar, Sulawesi Selatan</p>
+        <p class="footer-description-size">Indonesia</p>
+      </div>
+      <div class="footer-kontak">
+        <h5 class="footer-title-size mb-2">KONTAK</h5>
+        <p class="footer-description-size">08234567890</p>
+        <p class="footer-description-size">@senjacoffe.id</p>
+        <p class="footer-description-size">08:00 - 22:00 WITA</p>
+      </div>
+      <div class="footer-ikuti">
+        <h5 class="footer-title-size mb-2">Ikuti kami</h5>
+        <p class="footer-description-size">IG</p>
+        <p class="footer-description-size">FB</p>
+        <p class="footer-description-size">TT</p>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

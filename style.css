@@ -1,0 +1,539 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #6F4E37;
+  --secondary: #E6D5C3;
+  --dark: #2B1D16;
+  --light: #F5F0EB;
+  --accent: #C08B5C;
+  --text-dark: #1E1E1E;
+  --text-light: #FFFFFF;
+  --hover: #8B5E3C;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--text-dark);
+}
+
+.container {
+  background-image: url("assets/image/senja.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+nav {
+  display: flex; 
+  position: fixed;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: var(--secondary);
+}
+
+.nav-title{
+  font-weight: bolder;
+}
+.nav-title:hover {
+  transform: rotate(2deg);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+ 
+li {
+  list-style-type: none;
+  padding: 4px 6px; 
+  border-bottom: 2px solid var(--light);
+}
+
+li:hover {
+  border-bottom: 2px solid var(--hover);
+  transition: .5s ease-in-out;
+}
+
+li a {
+  text-decoration: none; 
+}
+  
+a {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.btn-call {
+  background-color: rgba(0,0,0,0.2);
+  color: var(--text-light);
+  padding: 8px 16px;
+  border: 2px solid var(--light);
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.btn-call:hover {
+  background-color: var(--hover);
+  border: 2px solid var(--hover);
+  transition: .5s ease-in-out;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.3);
+  color: var(--text-light);
+  width: 40%;
+  height: 100vh;
+  margin-left: 0;
+}
+
+.intro {
+  width: 100%;
+  padding: 4px;
+  
+}
+
+.intro-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.intro-description {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 14px;
+  margin-left: 6px;
+}
+
+.btn-cta {
+  border: none;
+  background-color: var(--accent);
+  color: var(--text-light);
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.btn-cta:hover {
+  background-color: var(--hover);
+  transition: .5s ease-in-out;
+}
+
+#about {
+  display: flex; 
+  background-color: var(--secondary);
+  color: var(--text-dark);
+  width: 100%;
+  padding: 20px;
+  height: 0 auto;
+}
+
+.about-container {
+  display: flex;
+  padding: 120px 0px;
+  margin-left: 80px;
+  margin-right: 40px;
+  gap: 28px;
+}
+
+.about-img {
+  width: 35%;
+  height: 100%;
+  border-radius: 8px;
+  margin-left: 0px;
+}
+
+.about-content {
+  color: var(--text-dark);
+}
+
+.about-intro {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about-title {
+  font-size: 38px;
+  padding: 20px 0px;
+}
+
+.about-description {
+  font-size: 24px;
+  padding: 10px 0px;
+  margin-right: 100px;
+}
+
+.about-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+  gap: 28px;
+}
+
+.about-card-item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0px;
+  gap: 20px;
+}
+
+.about-card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-card-description {
+  font-size: 18px;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+
+.menu-intro {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 18px;
+}
+
+.menu-title {
+  font-size: 38px;
+  padding: 14px;
+}
+
+.menu-card {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+  margin: 14px;
+  gap: 16px;
+}
+
+.menu-card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.menu-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.menu-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px;
+  gap: 10px;
+}
+
+.menu-card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-card-description {
+  font-size: 18px;
+}
+
+.menu-price {
+  color: var(--accent);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-btn {
+  padding: 30px;
+}
+
+#kontak {
+  display: flex;
+  flex-flow: row;
+}
+
+.kontak-text {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark);
+  color: var(--text-light);
+  width: 40%;
+  height: 0 auto;
+  padding: 20px;
+  gap: 8px;
+}
+
+.kontak-intro {
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.kontak-title {
+  font-size: 28px;
+}
+
+.kontak-form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 40px;
+  gap: 10px;
+}
+
+.input-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input-form-data {
+  border: none;
+  border-radius: 4px;
+  width: 48%;
+  height: 30px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.input-form-massages {
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 90px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--dark);
+  color: var(--text-light);
+  padding: 10px;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+.footer-title-title {
+  color: var(--secondary);
+}
+.mb-2 {
+  margin-bottom: 2px;
+}
+
+.footer-alamat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-kontak {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-ikuti {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .about-img {
+    display: none;
+  }
+  .menu-card {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-title {
+    font-size: 24px;
+    margin: 14px;
+  }
+  .nav-container {
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    padding: 8px 16px;
+    bottom: 0;
+    width: 100%;
+    height: 0 auto;
+    margin-left: 0 auto;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 9;
+  }
+  .btn-call {
+    margin: 14px;
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  #hero {
+    width: 100%;
+  }
+  .cta {
+    width: 100%;
+    padding: 8px;
+  }
+  .btn-cta {
+    padding: 8px;
+    margin: 4px;
+  }
+  
+  #about {
+    padding: 0;
+  }
+  .about-container {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+  }
+  .about-img {
+    display: none;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-intro {
+    font-size: 12px;
+    padding: 14px;
+  }
+  .about-title {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .about-description {
+    font-size: 12px;
+    margin: 0;
+    padding: 8px 12px;
+  }
+  .about-card {
+    margin: 14px;
+    padding: 0;
+    gap: 20px;
+  }
+  .about-card-item {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+  }
+  .about-card-title {
+    font-size: 12px;
+  }
+  .about-card-description {
+    font-size: 8px;
+  }
+  
+  .menu-intro {
+    font-size: 12px;
+  }
+  .menu-title {
+    font-size: 24px;
+  }
+  .menu-card {
+    grid-template-columns: auto auto
+  }
+  .menu-card-title {
+    font-size: 16px;
+  }
+  .menu-card-description {
+    font-size: 10px;
+  }
+  .menu-price {
+    font-size: 12px;
+  }
+  
+  #kontak {
+    display: flex;
+    flex-direction: column;
+  }
+  .kontak-text {
+    width: 100%;
+  }
+  .kontak-intro {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .kontak-form {
+    width: 100%;
+    padding: 20px;
+  }
+  .input-data {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+  }
+  .input-form-data {
+    width: 100%;
+  }
+  
+  #footer {
+    margin-bottom: 44px;
+  }
+  .footer-title-size {
+    font-size: 8px;
+  }
+  .footer-description-size {
+    font-size: 6px;
+  }
+}
